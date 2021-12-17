@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Schedule Lawyer</string>
+
+    <string name="evidence_type_prompt">Evidence type</string>
+    <string-array name="evidence_type_arrays">
+        <item>Document</item>
+        <item>Image</item>
+        <item>Audio</item>
+        <item>Video</item>
+    </string-array>
+
+    <string name="schedule_type_prompt">Evidence type</string>
+    <string-array name="schedule_type_arrays">
+        <item>Meting with client</item>
+        <item>Court hearing</item>
+        <item>Meeting with other</item>
+    </string-array>
+
+
+</resources>

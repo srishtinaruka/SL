@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_new_schedule">
+
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHeight_percent="0.06"
+        app:layout_constraintWidth_percent="0.8"
+        android:layout_marginTop="50dp"
+        android:text="Add New Schedule"
+        android:textSize="30dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/accent"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="30dp"
+        android:text="Title"
+        android:textSize="17dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/purple"
+        />
+
+    <EditText
+        android:id="@+id/spinner"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:entries="@array/schedule_type_arrays"
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.85"
+        android:layout_marginStart="30dp"
+        android:hint="Add title"
+        android:textColorHint="@color/bg"
+        android:paddingStart="10dp"
+        android:background="@drawable/edittextbackground"
+        />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="30dp"
+        android:text="Time"
+        android:textSize="17dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/purple"
+        />
+
+    <EditText
+        android:id="@+id/edittime"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.85"
+        android:background="@drawable/edittextbackground"
+        android:hint="enter time"
+        android:textColorHint="@color/bg"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edittime"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="30dp"
+        android:text="Date"
+        android:textSize="17dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/purple"
+        />
+
+    <EditText
+        android:id="@+id/editDate"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/date"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.85"
+        android:text="enter date"
+        android:textColor="@color/bg"
+        android:background="@drawable/edittextbackground"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editDate"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="30dp"
+        android:text="Location"
+        android:textSize="17dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/purple"
+        />
+
+    <EditText
+        android:id="@+id/editLocation"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/location"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.85"
+        android:text="enter location"
+        android:textColor="@color/bg"
+        android:background="@drawable/edittextbackground"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editLocation"
+        app:layout_constraintHeight_percent="0.04"
+        app:layout_constraintWidth_percent="0.9"
+        android:layout_marginTop="30dp"
+        android:text="Description"
+        android:textSize="17dp"
+        android:layout_marginStart="30dp"
+        android:textColor="@color/purple"
+        />
+
+    <EditText
+        android:id="@+id/editDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@+id/description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.85"
+        android:text="enter description"
+        android:textColor="@color/bg"
+        android:background="@drawable/edittextbackground"
+        android:textSize="20dp"
+        android:layout_marginStart="30dp"
+        android:paddingStart="10dp"
+        />
+
+    <Button
+        android:id="@+id/addSchedule"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/editDescription"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintHeight_default="percent"
+        app:layout_constraintHeight_percent="0.05"
+        app:layout_constraintWidth_percent="0.4"
+        android:background="@drawable/buttonbackgroundlightpurple"
+        android:text="ADD"
+        android:textSize="20dp"
+        android:textColor="@color/bg"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

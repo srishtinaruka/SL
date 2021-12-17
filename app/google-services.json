@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "931320922133",
+    "project_id": "schedule-e8dda",
+    "storage_bucket": "schedule-e8dda.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931320922133:android:5cd9817e8c9c5f36298e1c",
+        "android_client_info": {
+          "package_name": "com.example.schedulelawyer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931320922133-tu97mo8m82k1ocjn5oi7ldj7itb04bde.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.schedulelawyer",
+            "certificate_hash": "05d1fe1d4de310bd6a6c65e402ef95dddddd1a08"
+          }
+        },
+        {
+          "client_id": "931320922133-13odiadcue3k8m5g3kkla828m1dhsru5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC8mKwEOgVNE0FSZ5b_nua1aw0RDjcka_4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "931320922133-13odiadcue3k8m5g3kkla828m1dhsru5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
