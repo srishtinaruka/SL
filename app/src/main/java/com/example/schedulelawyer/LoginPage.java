@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -22,6 +23,8 @@ public class LoginPage extends AppCompatActivity {
     Button loginButton;
     FirebaseAuth mauth;
     FirebaseUser user;
+    TextView signUp;
+    TextView forgotPassword;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +33,8 @@ public class LoginPage extends AppCompatActivity {
         password=findViewById(R.id.password);
         mauth=FirebaseAuth.getInstance();
         loginButton=findViewById(R.id.loginButton);
+        signUp=findViewById(R.id.signUp);
+        forgotPassword=findViewById(R.id.forgotPassword);
         if(user==null) {
             loginButton.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -55,5 +60,19 @@ public class LoginPage extends AppCompatActivity {
             Intent intent = new Intent(LoginPage.this, HomePage.class);
             startActivity(intent);
         }
+        signUp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginPage.this, SignUp.class);
+                startActivity(intent);
+            }
+        });
+        forgotPassword.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginPage.this, forgot_password.class);
+                startActivity(intent);
+            }
+        });
     }
 }

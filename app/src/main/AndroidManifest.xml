@@ -9,11 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScheduleLawyer">
-        <activity android:name=".particular_evidence"></activity>
+        <activity android:name=".forgot_password"></activity>
+        <activity android:name=".SignUp" />
+        <activity android:name=".particular_evidence" />
         <activity android:name=".add_new_schedule" />
         <activity android:name=".all_schedules_page" />
         <activity android:name=".schedule_card" />
-        <activity android:name=".calendar_view"></activity>
+        <activity android:name=".calendar_view" />
         <activity android:name=".add_new_evidence" />
         <activity android:name=".add_new_case" />
         <activity android:name=".add_new_client" />

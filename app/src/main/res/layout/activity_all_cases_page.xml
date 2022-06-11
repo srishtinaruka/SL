@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".all_cases_page">
+    tools:context=".all_cases_page"
+    android:background="@color/bg">
 
     <TextView
         android:id="@+id/Heading"
@@ -64,6 +65,9 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="15dp"
-        android:layout_marginRight="15dp"/>
+        android:layout_marginRight="15dp"
+        android:src="@drawable/plus"
+        app:rippleColor="@color/grey"
+        app:backgroundTint="@color/purple"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
